@@ -4,7 +4,6 @@ let video;
 function setup() {
     createCanvas(400, 400);
     video = createCapture(VIDEO);
-    video.hide();
     background(0);
     mobileNet = ml5.imageClassifier('MobileNet', video, modelReady);
 }
